@@ -1,0 +1,42 @@
+/* body {
+    color: white;
+} */
+
+.menu {
+    width: 100px;
+}
+
+button {
+    outline: none;
+    border: 1 px solid black;
+    padding: 10px;
+    color: rgb(46, 92, 191);
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(46, 92, 191);
+    color: white;
+}
+
+a { 
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: #9f0000;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: rgb(36, 73, 152);
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
