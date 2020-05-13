@@ -23,17 +23,17 @@ console.log("Break The Code");
 // ERQXV ILIWHHQ PLQXWHV EUHDN
 
 function codeBreaker(string) {
-    const alphabet = 'XYZABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
     const shiftParam = -3
 
     return string
         .split('')
         .map(letter => {
-        
         if (alphabet.indexOf(letter) === -1) {
             return letter
         } else {
-            let newLetterIdx = alphabet.indexOf(letter) + shiftParam
+            let newLetterIdx = (alphabet.indexOf(letter) + shiftParam) % 26
+            newLetterIdx < 0 ? newLetterIdx += 26 : newLetterIdx;
             return alphabet[newLetterIdx]
         }
     })
@@ -41,5 +41,6 @@ function codeBreaker(string) {
 }
 
 console.log(codeBreaker("KHOOR"));
+console.log(codeBreaker("ABC"));
 console.log(codeBreaker("NQRZOHGJH LV OLPLWHG. LPDJLQDWLRQ HQFLUFOHV WKH ZRUOG."));
 console.log(codeBreaker("ERQXV ILIWHHQ PLQXWHV EUHDN"));
