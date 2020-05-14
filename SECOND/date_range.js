@@ -40,3 +40,7 @@ var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
 console.log(new Intl.DateTimeFormat('en-US', options).format(startDate));
 
 
+// // to test
+// const date = new Date(2009, 10, 10);  // 2009-11-10
+// const month = date.toLocaleString('default', { month: 'long' });
+// console.log(month);
