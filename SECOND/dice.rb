@@ -18,18 +18,18 @@
 
 class Dice
   def initialize
-    
+    raise "Dont try this mate!!"
   end
 
-  def self.roll(n_times = 1)
+  def Dice.roll(n_times = 1)
     if n_times == 1
-      return rand(1..6)
+      rand(1..6)
     else
       roll_array = []
       n_times.times do
         roll_array<< rand(1..6)
       end
-      return roll_array
+      roll_array
     end
   end
 end
